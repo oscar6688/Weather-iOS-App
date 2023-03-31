@@ -1,1 +1,1 @@
-# Weather-iOS-App
+# WeatherEmoji-iOS-App
