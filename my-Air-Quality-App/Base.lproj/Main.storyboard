@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="my_Air_Quality_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="air_wednesday" translatesAutoresizingMaskIntoConstraints="NO" id="yrG-yq-f8n">
+                                <rect key="frame" x="28" y="138" width="336" height="368"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="8dV-I7-Fxz"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="hOt-ne-w6w"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyk-5a-HrA">
+                                <rect key="frame" x="109" y="658" width="174" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="3Fp-XY-1sB"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="OTi-BO-XR8"/>
+                                    <constraint firstAttribute="width" constant="174" id="aaq-qf-maZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click Me!" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickMeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C3k-Ou-tGa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.14539088156528557" blue="0.2799806701030928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yrG-yq-f8n" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="119" id="Axd-8I-mAw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pyk-5a-HrA" secondAttribute="bottom" constant="42" id="O7a-U7-kHy"/>
+                            <constraint firstItem="Pyk-5a-HrA" firstAttribute="top" secondItem="yrG-yq-f8n" secondAttribute="bottom" constant="279" id="VR4-0l-s1t"/>
+                            <constraint firstItem="Pyk-5a-HrA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="WPL-Wo-Hms"/>
+                            <constraint firstItem="yrG-yq-f8n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="cnl-1o-eIq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pyk-5a-HrA" secondAttribute="bottom" constant="54" id="hIM-Pc-xbh"/>
+                            <constraint firstItem="Pyk-5a-HrA" firstAttribute="top" secondItem="yrG-yq-f8n" secondAttribute="bottom" constant="299" id="r28-9b-QxL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pyk-5a-HrA" secondAttribute="trailing" constant="110" id="rHh-Tb-MP2"/>
+                            <constraint firstItem="Pyk-5a-HrA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ulv-PQ-hDg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bitmoji_imageView_wed" destination="yrG-yq-f8n" id="t8R-bi-giN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25.190839694656489" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="air_wednesday" width="398" height="398"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
