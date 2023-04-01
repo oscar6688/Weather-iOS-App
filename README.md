@@ -1,6 +1,8 @@
 # WeatherEmoji-iOS-App
 
-App still under advancement
+App still under advancement!
+
+App description: base on user's location and weather quality, we give an emoji when user clicks on the button. 
 
 <img width="374" alt="Screenshot 2023-03-31 at 16 48 13" src="https://user-images.githubusercontent.com/49414902/229252228-789bf5b6-4e66-420f-887e-3cd396b782c1.png">
 
